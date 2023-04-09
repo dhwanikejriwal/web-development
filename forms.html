@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form action="backend.php">
+      <label for="name">Name</label>
+      <div><input type="text" name="myname" id="name" /></div>
+      <br />
+
+      <label for="email">Email</label>
+      <div>
+        <input type="email" name="myemail" id="email" />
+    </div>
+      <br />
+
+      <label for="bonus">Bonus</label>
+      <div><input type="number" name="mybonus" id="bonus" /></div>
+      <br />
+
+      <label for="">Name</label>
+      <div>Favourite color:<input type="color" name="favcolor" /></div>
+      <br />
+
+      <div>
+        Are you eligible? Yes<input type="checkbox" name="myeligibilty" /> No
+        <input type="checkbox" name="myeligibilty" />
+      </div>
+      <br />
+
+      <div>DOB:<input type="date" name="date_of_birth" /></div>
+      <br />
+
+      <div>
+        Gender: Male<input type="radio" name="mygender" /> Female
+        <input type="radio" name="mygender" />
+      </div>
+      <br />
+
+      <div>Password:<input type="password" name="mypassword" /></div>
+      <br />
+      <div>Password:<input type="" name="mypassword" /></div>
+      <br />
+
+      <div>
+         Write about yourself<textarea name="myText"  cols="30" rows="10"></textarea>
+      </div>
+       <label for="car">CAR</label>
+      <div>
+       <select name="mycar" id="car">
+        <option value="Indica">Indica</option>
+        <option value="Duster">Duster</option>
+       </select>
+      </div>
+      <div>
+        <input type="submit" value="Submit Now" />
+        <input type="reset" value="Reset" />
+      </div>
+    </form>
+  </body>
+</html>
