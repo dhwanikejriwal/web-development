@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+              background-color: #0b5770;;
+        }
+        .container{
+            background-color: rgb(164, 214, 233);
+           border: 3px solid rgb(53, 114, 178); 
+           /* We can set margins/padding for top right bottom left like this */
+           /* padding-top: 3px; 
+           padding-left: 6px;
+           padding-bottom: 19px;
+           padding-right: 8px;*/
+
+           /* padding: 23px 4px 7px 16px; padding : top right bottom left */
+           padding: 35px 50px; /*padding : y(top/bottom)  x(left/right)*/
+           margin: 8px;
+           border-radius: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Heading 1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex distinctio quaerat similique eveniet, officia labore voluptatem itaque nisi facere error sit laborum nihil nobis eius optio deleniti alias? Earum maxime non obcaecati!</p>
+    </div>
+    <div class="container">
+        <h3>Heading 2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex distinctio quaerat similique eveniet, officia labore voluptatem itaque nisi facere error sit laborum nihil nobis eius optio deleniti alias? Earum maxime non obcaecati!</p>
+    </div>
+    <div class="container">
+        <h3>Heading 3</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex distinctio quaerat similique eveniet, officia labore voluptatem itaque nisi facere error sit laborum nihil nobis eius optio deleniti alias? Earum maxime non obcaecati!</p>
+    </div>
+</body>
+</html>

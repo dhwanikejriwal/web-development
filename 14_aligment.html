@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 700px;
+            border: 2px solid black;
+            background-color: yellow;
+            margin: 88px auto;
+        }
+
+        .item{
+            border: 2px solid green;
+            margin: 12px 3px;
+            padding: 2px 3px;
+            background-color: rgb(206, 248, 206);
+            width: 300px;
+            margin:  30px auto;
+        }
+
+        #fruit{
+            float: left;
+            width: 48%;
+        }
+        #vegetable{
+            float: right;
+            width: 48%;
+        }
+        #Grains{
+            clear: both;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="fruit" class="item">
+            <h3>Fruits</h3>
+            <p>
+                <ol>
+                    <li>Apple</li>
+                    <li>Banana</li>
+                    <li>Cheeku</li>
+                </ol>
+            </p>
+        </div>
+        <div id="vegetable" class="item">
+            <h3>vegetable</h3>
+            <p>
+                <ol>
+                    <li>Carrot</li>
+                    <li>Spinach</li>
+                    <li>Potato</li>
+                </ol>
+            </p>
+        </div>
+        <div id="Grains" class="item">
+            <h3>Grains</h3>
+            <p>
+                <ol>
+                    <li>Wheat</li>
+                    <li>Rice</li>
+                    <li>Millets</li>
+                </ol>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
