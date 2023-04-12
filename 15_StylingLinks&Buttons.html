@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors and Buttons </title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: rgb(243, 180, 180);
+            margin: 34px auto;
+            width: 666px;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        
+        a:hover{
+            color: rgb(40, 152, 164);
+            background-color: yellow;
+        }
+        
+        a:visited{
+            background-color: green;
+        }
+        
+        a:active{
+            background-color: beige;
+        }
+        
+        .btn{
+            background-color: aqua;
+            padding: 6px;
+            border: none;
+            cursor:pointer;
+            font-size: 14px;
+            border-radius: 4px;
+        }
+
+        .btn:hover{
+            background-color: burlywood;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div id="cont1" class="container">
+        <h3>Hello everyone</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae delectus officia, nostrum quam facere cumque voluptatibus porro eum qui atque assumenda laboriosam eius doloremque unde ea suscipit! Delectus fugit dolorum, minus ipsum aut nesciunt.</p>
+        <a href="https://yahoo.com" class="btn">Read More</a>
+        <button class="btn">Contact us</button>
+    </div>
+</body>
+</html>
