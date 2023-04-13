@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Property</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header {
+        border: 2px solid red;
+        width: 1200px;
+        margin: auto;
+      }
+      img {
+        margin: auto;
+        display: block;
+        width: 40px;
+        /*  Display inline: it will take according to the size of the element and it will not come in centre by margin auto*/
+        /* Display block: it allows to set the width of the block */
+      }
+      h3 {
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0;
+      }
+      .box{
+        border: 2px solid purple;
+        background-color: lavenderblush;
+        margin: 4px 0px;
+        padding: 23px;
+        width: 33%;
+        box-sizing: border-box;
+        display: inline-block;
+      }
+      .container{
+        margin: auto;
+        width: 1200px;    
+      }
+      
+      
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="github.png" alt="" />
+      <h3>Welcome to Dhwani's Blog</h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4>Heading1</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas est adipisci animi repudiandae illo, accusamus dolore accusantium. Assumenda pariatur, soluta cupiditate quia non commodi, recusandae provident, doloribus molestias totam tempore similique at consectetur sapiente.</p>
+        </div>
+        <div class="box">
+            <h4>Heading2</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas est adipisci animi repudiandae illo, accusamus dolore accusantium. Assumenda pariatur, soluta cupiditate quia non commodi, recusandae provident, doloribus molestias totam tempore similique at consectetur sapiente.</p>
+        </div>
+        <div class="box">
+            <h4>Heading3</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas est adipisci animi repudiandae illo, accusamus dolore accusantium. Assumenda pariatur, soluta cupiditate quia non commodi, recusandae provident, doloribus molestias totam tempore similique at consectetur sapiente.</p>
+        </div>
+
+    </div>
+  </body>
+</html>
+
+<!-- If we want to adjust widths for inline elements we use inline-block as display -->

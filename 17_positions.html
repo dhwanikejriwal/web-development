@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+     <style>
+        /*Positions: absolute,relative,fixed,sticky,static(default)*/
+        .container{
+            border: 2px solid black;
+            background-color: bisque;
+            height: 3444px;
+        }
+        .box{
+            border: 4px solid green;
+            margin: 4px;
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+        }
+        #box3{
+            /* Absolute: Relative to parent's position */
+            /* Relative: Relative to its normal position */
+            /* top: 34px;
+            left: 4px; */
+            /* Fixed: Relative to browser window */
+            /* Sticky: Stick to top of the browser of the window */
+            position: sticky;
+            top : 3px;
+            
+        }
+     </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">Hello everyone</div>
+        <div class="box" id="box2">Chat with us</div>
+        <div class="box" id="box3">Have a nice day!</div>
+        <div class="box" id="box4">God bless you</div>
+    </div>
+</body>
+</html>
