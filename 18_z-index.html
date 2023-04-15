@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <style>
+        .box{
+            height: 150px;
+            width: 150px;
+            border: 2px solid black;
+        }
+        #box1{
+            background-color: blue;
+            position: relative;
+            top: 49px;
+            z-index: 34px;
+        }
+        #box2{
+            /* display: none; will hide the elemnet along with the spcae taken by it */
+            /* visibility: hidden;   will hidden the element but not the space taken by it */
+            /* z-index will only work for relative,absolute,sticky and fixed position
+            it determines which element will be seen */
+            background-color:red;
+            top: 14px;
+            z-index: 9px;
+        }
+        #box3{
+            background-color:yellow;
+        }
+        #box4{
+            background-color:green;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>
