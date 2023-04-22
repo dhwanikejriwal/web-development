@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes and Nth child psudo selector</title>
+    <style>
+        .container{
+            display: block;
+            width: 50px;
+            margin: auto;
+        }
+        input{
+            display: block;
+        }
+        input[type='text']{
+            border: 2px solid blue;
+            margin: 3px;
+            padding:8px
+        }
+        a[target]{
+            font-size: 30px;
+            color: brown;
+        }
+
+        li:nth-child(4){
+            color: orangered;
+            /* nth child pseudo selector */
+        }
+        li:nth-child(2n+0){
+            color: purple;
+        }
+        li:nth-child(odd){
+            background-color: yellowgreen;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">go to google</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your name">
+            
+            <input type="text" placeholder="Enter your password">
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            <li class="item" id="item1">Item1</li>
+            <li class="item" id="item2">Item2</li>
+            <li class="item" id="item3">Item3</li>
+            <li class="item" id="item4">Item4</li>
+            <li class="item" id="item5">Item5</li>
+            <li class="item" id="item6">Item6</li>
+        </ul>
+    </div>
+</body>
+</html>
