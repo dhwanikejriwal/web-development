@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations and Keyframes
+    </title>
+    <style>
+        .container{
+            background-color: lavender;
+        }
+        .box{
+            background-color:violet;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            /* animation-name: box_increase; */
+            animation-name: dhwani;
+            animation-duration: 4s;
+            animation-iteration-count: 4;
+            /* animation-fill-mode: forwards; */
+            /* animation will go in forward direction and finishes */
+
+            /* animation-timing-function: ease-in; */
+            /* tells about the speed of the animation ease-in - starting slow then fast */
+            
+            /* animation-delay: 4s; */
+            /* after opening the web page after how much time the animation will start */
+            
+            /* animation-direction: reverse; */
+            
+            /* creatimg animation */
+            /* animation: animation-name animation-durattion animaton-timing-fuction animation-delay animation-iteration-count animation-fill-mode*/
+
+            animation: dhwani 5s ease-in 4s 4 forwards;
+        }
+        @keyframes dhwani {
+            0%{
+               top: 0px;
+               left: 0px;
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+            }
+            75%{
+                top: 250px;
+                left: 250px;
+            }
+            100%{
+                top: 0px;
+                left: 250px;
+            }
+        }
+        @keyframes box_increase {
+            from{
+                width: 200px;
+            }
+            to{
+               width: 400px;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            THis is a box
+        </div>
+    </div>
+</body>
+</html>
